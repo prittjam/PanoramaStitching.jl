@@ -34,9 +34,11 @@ julia = "1.12"
 
 # TEMPORARY: the unreleased 0.2 wave of the stack; replaced by the registered versions at release.
 [sources]
-VisualGeometryToolkitCore = {path = "/home/jbpritts/src/vgtk-hand-eye-nlls/VisualGeometryToolkitCore"}
-VisualGeometryToolkitEstimation = {path = "/home/jbpritts/src/vgtk-hand-eye-nlls/VisualGeometryToolkitEstimation"}
-VisualGeometryToolkitFeatures = {path = "/home/jbpritts/src/vgtk-hand-eye-nlls/VisualGeometryToolkitFeatures"}
+# the stack's NLLSsolver fork (Schur system #60, OptimizeCache #62, trial reuse #63) until upstream releases them
+NLLSsolver = {url = "https://github.com/prittjam/NLLSsolver.jl", rev = "stack"}
+VisualGeometryToolkitCore = {path = "../vgtk-hand-eye-nlls/VisualGeometryToolkitCore"}
+VisualGeometryToolkitEstimation = {path = "../vgtk-hand-eye-nlls/VisualGeometryToolkitEstimation"}
+VisualGeometryToolkitFeatures = {path = "../vgtk-hand-eye-nlls/VisualGeometryToolkitFeatures"}
 
 [workspace]
 projects = ["test", "docs"]
