@@ -33,6 +33,7 @@ export register_rotations, Registration
 export ViewGraph, chain_tracks, refine_rotations, RotationBundleMetadata
 export world_cells, world_direction, CellSamples, sample_cells
 export true_up, up_frame, render_panorama
+public cell_centres, FrameFeatures, detect_features, pair_bearings, LOMA_SIZE
 
 include("view_graph.jl")
 include("rotation_bundle.jl")
