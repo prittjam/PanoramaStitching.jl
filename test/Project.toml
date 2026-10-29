@@ -19,9 +19,6 @@ VisualGeometryToolkitEstimation = "9a478df9-9a37-4dc7-9070-58617efe7573"
 
 [sources]
 PanoramaStitching = {path = ".."}
-# TEMPORARY: the unreleased 0.2 wave of the stack; replaced by the registered versions at release.
-VisualGeometryToolkitCore = {path = "../../vgtk-hand-eye-nlls/VisualGeometryToolkitCore"}
-VisualGeometryToolkitEstimation = {path = "../../vgtk-hand-eye-nlls/VisualGeometryToolkitEstimation"}
 
 [compat]
 Aqua = "0.8.18"

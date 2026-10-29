@@ -18,7 +18,7 @@ julia --project=docs --startup-file=no docs/make.jl
 ```
 
 One Pkg workspace (`[workspace] projects = ["test", "docs"]`), one untracked Manifest at the root. The stack packages resolve
-through the TEMPORARY `[sources]` of the unreleased wave until it is registered.
+from the registries (CauRegistry; General for those it holds).
 
 ## Layout
 
